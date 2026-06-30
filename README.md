@@ -22,7 +22,7 @@ SUB<br>
 AND<br>
 OR<br>
 XOR<br>
-COMPLIMENT<br>
+NOT<br>
 LEFT SHIFT<br>
 RIGHT SHIFT<br>
 
