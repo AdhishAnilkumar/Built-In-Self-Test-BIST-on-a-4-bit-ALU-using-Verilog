@@ -31,11 +31,16 @@ module Comparator(
     
     always@(posedge clk)begin
     
-    if (rst==0)begin 
-    i=i+1;
+    if (rst==1)begin 
+    i<=0;
+    PASS=0;
+    end 
+    
+    else begin
+    i<=i+1;
     PASS=0;
     
-    if(i==4095)begin
+    if(i==4094)begin
     if (GSIGN == 6'b100001)begin
     $display("TEST PASS.CUT is fault free.");
     PASS=1;
@@ -47,6 +52,9 @@ module Comparator(
    end 
 end
   end 
+  
+  
+endmodule
   
   
 endmodule
