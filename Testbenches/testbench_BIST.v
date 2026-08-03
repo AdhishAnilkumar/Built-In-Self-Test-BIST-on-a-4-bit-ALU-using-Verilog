@@ -79,7 +79,7 @@ $display("Cycle   Vector          A       B       OP  Cin Res     C   B    Sign"
     @(posedge clk);
     $display("%4d\t%b\t%b\t%b\t%b\t%b\t%b\t%b\t%b\t%b" ,i,{Q11,Q10,Q9,Q8,Q7,Q6,Q5,Q4,Q3,Q2,Q1,Q0},{Q3,Q2,Q1,Q0},{Q7,Q6,Q5,Q4},{Q10,Q9,Q8},Q11,RES,Carry,Borrow,SIGN);
     end
-    #1
+    #1    //to adjust the offset between the comparator and the testbench
 $finish;
 end
 
